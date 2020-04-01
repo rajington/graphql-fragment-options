@@ -8,6 +8,7 @@ type Showroom {
   name: String!
   description: String!
   location: Location!
+  images: [String!]!
 }
 
 type Shipment {
