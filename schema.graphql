@@ -1,0 +1,10 @@
+type Query {
+  showroom(id: ID!): Showroom!
+  shipment(id: ID!): Shipment!
+}
+
+type Showroom {
+  id: ID!
+  name: String!
+  description: String!
+}
