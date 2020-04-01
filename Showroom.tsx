@@ -1,4 +1,5 @@
 import React from "react";
+import Hero from "./Hero";
 import { ShowroomQueryVariables, useShowroomQuery } from "./Showroom.graphql";
 
 const Showroom: React.FC<ShowroomQueryVariables> = variables => {
@@ -6,8 +7,7 @@ const Showroom: React.FC<ShowroomQueryVariables> = variables => {
 
   return (
     <>
-      <h1>{data.name}</h1>
-      <h2>{data.description}</h2>
+      <Hero name={data.name} description={data.description} />
     </>
   );
 };
