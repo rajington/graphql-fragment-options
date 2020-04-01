@@ -1,0 +1,3 @@
+fragment GoogleMaps on Showroom {
+  location
+}
