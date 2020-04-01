@@ -4,6 +4,8 @@
 query Showroom($slug: String!) {
   showroom(slug: $slug) {
     ...Hero
-    ...GoogleMaps
+    location {
+      ...GoogleMaps
+    }
   }
 }

@@ -1,3 +1,4 @@
-fragment GoogleMaps on Showroom {
-  location
+fragment GoogleMaps on Location {
+  latitude
+  longitude
 }

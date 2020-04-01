@@ -9,7 +9,7 @@ const Showroom: React.FC<ShowroomQueryVariables> = variables => {
   return (
     <>
       <Hero {...data} />
-      <GoogleMaps {...data} />
+      <GoogleMaps {...data.location} />
     </>
   );
 };
