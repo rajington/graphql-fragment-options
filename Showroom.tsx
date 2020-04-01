@@ -4,13 +4,13 @@ import Gallery from "./Gallery";
 import GoogleMaps from "./GoogleMaps";
 import { ShowroomQueryVariables, useShowroomQuery } from "./Showroom.graphql";
 
-const Showroom: React.FC<ShowroomQueryVariables> = variables => {
-  const data = useShowroomQuery({ variables });
+const Showroom: React.FC<ShowroomQueryVariables> = ({ id }) => {
+  const data = useShowroomQuery({ variables: { id } });
 
   return (
     <>
-      <Hero {...data} />
-      <Gallery {...data} />
+      <Hero id={id} />
+      <Gallery id={id} />
       <GoogleMaps {...data.location} />
     </>
   );

@@ -1,11 +1,15 @@
 import React from "react";
-import { HeroFragment } from "./Hero.graphql";
+import { useHeroFragment } from "./Hero.graphql";
 
-const Hero: React.FC<HeroFragment> = ({ name, description }) => (
-  <>
-    <h1>{name}</h1>
-    <h2>{description}</h2>
-  </>
-);
+const Hero: React.FC<{ id: string }> = id => {
+  const data = useHeroFragment(id);
+
+  return (
+    <>
+      <h1>{data.name}</h1>
+      <h2>{data.description}</h2>
+    </>
+  );
+};
 
 export default Hero;
