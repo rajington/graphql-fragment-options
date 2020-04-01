@@ -7,7 +7,7 @@ const Showroom: React.FC<ShowroomQueryVariables> = variables => {
 
   return (
     <>
-      <Hero name={data.name} description={data.description} />
+      <Hero {...data} />
     </>
   );
 };
