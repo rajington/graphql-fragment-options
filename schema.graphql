@@ -10,6 +10,11 @@ type Showroom {
   location: Location!
 }
 
+type Shipment {
+  id: ID!
+  location: Location!
+}
+
 type Location {
   latitude: number!
   longitude: number!
