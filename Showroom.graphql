@@ -1,0 +1,6 @@
+query Showroom($slug: String!) {
+  showroom(slug: $slug) {
+    name
+    description
+  }
+}
