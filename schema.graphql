@@ -7,4 +7,10 @@ type Showroom {
   id: ID!
   name: String!
   description: String!
+  location: Location!
+}
+
+type Location {
+  latitude: number!
+  longitude: number!
 }
