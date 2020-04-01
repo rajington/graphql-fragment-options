@@ -1,0 +1,4 @@
+fragment Hero on Showroom {
+  name
+  description
+}
