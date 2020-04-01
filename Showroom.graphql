@@ -1,7 +1,9 @@
 #import "./Hero.graphql"
+#import "./GoogleMaps.graphql"
 
 query Showroom($slug: String!) {
   showroom(slug: $slug) {
     ...Hero
+    ...GoogleMaps
   }
 }

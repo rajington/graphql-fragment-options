@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "./Hero";
+import GoogleMaps from "./GoogleMaps";
 import { ShowroomQueryVariables, useShowroomQuery } from "./Showroom.graphql";
 
 const Showroom: React.FC<ShowroomQueryVariables> = variables => {
@@ -8,6 +9,7 @@ const Showroom: React.FC<ShowroomQueryVariables> = variables => {
   return (
     <>
       <Hero {...data} />
+      <GoogleMaps {...data} />
     </>
   );
 };
