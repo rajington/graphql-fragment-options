@@ -1,0 +1,13 @@
+#import "./Hero.graphql"
+#import "./Gallery.graphql"
+#import "./GoogleMaps.graphql"
+
+query Showroom($slug: String!) {
+  showroom(slug: $slug) {
+    ...Hero
+    ...Gallery
+    location {
+      ...GoogleMaps
+    }
+  }
+}

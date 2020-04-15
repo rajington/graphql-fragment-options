@@ -1,0 +1,22 @@
+type Query {
+  showroom(id: ID!): Showroom!
+  shipment(id: ID!): Shipment!
+}
+
+type Showroom {
+  id: ID!
+  name: String!
+  description: String!
+  location: Location!
+  images: [String!]!
+}
+
+type Shipment {
+  id: ID!
+  location: Location!
+}
+
+type Location {
+  latitude: number!
+  longitude: number!
+}

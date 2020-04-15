@@ -1,0 +1,4 @@
+fragment GoogleMaps on Location {
+  latitude
+  longitude
+}
